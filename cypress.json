@@ -1,1 +1,97 @@
-{}
+{
+    "baseUrl": "https://www.merriam-webster.com/",
+    "env": {
+        "header": {
+            "nav-bar-text": [
+                "GAMES",
+                "THESAURUS",
+                "WORD OF THE DAY",
+                "WORDS AT PLAY"
+            ],
+            "nav-bar-url": [
+                "/word-games",
+                "/thesaurus",
+                "/word-of-the-day",
+                "/words-at-play"
+            ]
+        },
+        "footer": {
+            "other-dictionaries": [
+                "LEARNER'S ESL DICTIONARY",
+                "VISUAL DICTIONARY",
+                "SCRABBLE® WORD FINDER"
+            ],
+            "other-dictionaries-url": [
+                "http://learnersdictionary.com/",
+                "http://www.visualdictionaryonline.com/",
+                "http://scrabble.merriam.com/"
+            ],
+            "translation-dictionaries": [
+                "MERRIAM-WEBSTER'S UNABRIDGED DICTIONARY",
+                "BRITANNICA ENGLISH - ARABIC TRANSLATION",
+                "NGLISH - SPANISH-ENGLISH TRANSLATION"
+            ],
+            "translation-dictionaries-url": [
+                "http://unabridged.merriam-webster.com/",
+                "http://arabic.britannicaenglish.com/en",
+                "http://www.nglish.com/spanish/en/"
+            ],
+            "social-urls": [
+                "https://www.facebook.com/merriamwebster",
+                "https://twitter.com/merriamwebster",
+                "https://www.youtube.com/user/MerriamWebsterOnline",
+                "https://www.instagram.com/merriamwebster/"
+            ],
+            "clearfix-text": [
+                "Home ",
+                "Help ",
+                "Apps ",
+                "About Us ",
+                "Shop ",
+                "Advertising Info ",
+                "Dictionary API ",
+                "Contact Us ",
+                "Join MWU ",
+                "Videos ",
+                "Word of the Year ",
+                "Puku ",
+                "Vocabulary Resources ",
+                "Law Dictionary ",
+                "Medical Dictionary ",
+                "Privacy Policy ",
+                "Terms of Use ",
+                "Do Not Sell My Info"
+            ],
+            "clearfix-url": [
+                "/",
+                "/help",
+                "/apps",
+                "/about-us",
+                "https://shop.merriam-webster.com/",
+                "/advertising",
+                "https://www.dictionaryapi.com/",
+                "/contact-us",
+                "https://unabridged.merriam-webster.com/subscriber/register/p1?HDR_GLOBAL_JOINMWU",
+                "/video",
+                "/words-at-play/word-of-the-year",
+                "/puku/about",
+                "/vocabulary/see-all",
+                "/legal",
+                "/medical",
+                "/privacy-policy",
+                "/terms-of-use",
+                "#"
+            ],
+            "browse-text": [
+                "Browse the Thesaurus ",
+                "Browse the Medical Dictionary",
+                "Browse the Legal Dictionary"
+            ],
+            "browse-url": [
+                "/browse/thesaurus/a",
+                "/browse/medical/a",
+                "/browse/legal/a"
+            ]
+        }
+    }
+}

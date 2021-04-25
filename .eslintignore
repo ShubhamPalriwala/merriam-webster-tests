@@ -1,0 +1,3 @@
+# Ignore built files except build/index.js
+cypress/integration/examples/
+cypress/integration/support/index.js
