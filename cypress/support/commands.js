@@ -53,3 +53,20 @@ Cypress.Commands.add("validateLatestAndTopPicks", (promoNumber, position) => {
       .and("have.text", cardContent);
   });
 });
+
+Cypress.Commands.add("validateQuizzes", (quizname) => {
+  let url = quizname;
+  if (quizname === "vocabulary") {
+    url = "vocabulary-quiz";
+  }
+  cy.get(`.${quizname} > .image-container > a > .lazyload-container`).should(
+    "be.visible"
+  );
+  cy.get(`.${quizname} > .info-container`).should("be.visible");
+  cy.get(`.${quizname} > .info-container > .have-not-play`)
+    .should("be.visible")
+    .and("contains.text", "Your Score: N/A");
+  cy.get(
+    `.${quizname} > .info-container > .link-container > .play-now-link`
+  ).and("have.attr", "href", `/word-games/${url}`);
+});
