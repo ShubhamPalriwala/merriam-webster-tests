@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable no-undef */
 // ***********************************************************
 // This example support/index.js is processed and
 // loaded automatically before your test files.
@@ -14,7 +16,15 @@
 // ***********************************************************
 
 // Import commands.js using ES2015 syntax:
-import './commands'
+import "./commands";
 
+Cypress.on(
+  "uncaught:exception",
+  (err, runnable) =>
+    // returning false here prevents Cypress from
+    // failing the test when the page takes time to
+    // load as scripts load asynchronously throughout.
+    false
+);
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
