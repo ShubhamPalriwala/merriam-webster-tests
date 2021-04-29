@@ -69,22 +69,13 @@ describe("Test the Weekly Challenge section", () => {
       "be.visible"
     );
 
-    cy.get(".text-content > h5 > a")
-      .should("be.visible")
-      .and("contains.text", "Name that Thing: Flower Edition")
-      .and("have.attr", "href", "/word-games/ntt-flowers-quiz");
+    cy.get(".text-content > h5 > a").should("be.visible");
 
-    cy.get(".mell-gr235 > a")
-      .should("be.visible")
-      .and("contains.text", "Can you correctly identify these flowers?")
-      .and("have.attr", "href", "/word-games/ntt-flowers-quiz");
+    cy.get(".mell-gr235 > a").should("be.visible");
 
     cy.get(".text-content").should("be.visible");
 
-    cy.get(".main-action")
-      .should("be.visible")
-      .and("have.text", "Play Now")
-      .and("have.attr", "href", "/word-games/ntt-flowers-quiz");
+    cy.get(".main-action").should("be.visible").and("have.text", "Play Now");
 
     cy.get(".social-bar > ul ").should("be.visible");
     cy.get(".social-bar > ul >").each((socialElement, rawIndex) => {

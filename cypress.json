@@ -6,13 +6,15 @@
                 "GAMES",
                 "THESAURUS",
                 "WORD OF THE DAY",
-                "WORDS AT PLAY"
+                "BLOG",
+                "SHOP"
             ],
             "nav-bar-url": [
                 "/word-games",
                 "/thesaurus",
                 "/word-of-the-day",
-                "/words-at-play"
+                "/words-at-play",
+                "https://shop.merriam-webster.com/"
             ]
         },
         "footer": {
