@@ -1,4 +1,5 @@
 /* eslint-disable no-undef */
+
 describe("Tests the Navigation Bar", () => {
   beforeEach(() => {
     cy.viewport("macbook-15");
@@ -182,7 +183,7 @@ describe("Tests the Word of the Day Section", () => {
 
     cy.get(".wotd-promo__subscribe__form__email")
       .should("be.visible")
-      .type("random@mail.com");
+      .type(Cypress.env("EMAIL"));
     cy.contains("Sign Up").should("be.visible").click({ force: true });
 
     cy.get(".subscribed-msg")
@@ -697,7 +698,7 @@ describe("Tests the Footer of the page", () => {
 
     cy.get(".footer-subscribe-field")
       .should("be.visible")
-      .type("random@mail.com");
+      .type(Cypress.env("EMAIL"));
     cy.get('[aria-label="Subscribe"]').click({ force: true });
     cy.get(".subscribed-msg").should("be.visible");
   });

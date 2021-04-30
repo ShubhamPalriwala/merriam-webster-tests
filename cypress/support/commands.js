@@ -25,6 +25,14 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
+Cypress.Commands.add("forceVisit", (url) => {
+  cy.get("body").then((body) => {
+    const appWindow = body[0].ownerDocument.defaultView;
+    appWindow.location = url;
+    return true;
+  });
+});
+
 Cypress.Commands.add("validateLatestAndTopPicks", (promoNumber, position) => {
   cy.get(
     `[data-event-scroll-depth="hp-promo-1"] > .content-widget > .content-widget__${position} > `

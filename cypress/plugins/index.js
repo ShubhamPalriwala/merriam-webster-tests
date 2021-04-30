@@ -1,3 +1,4 @@
+/* eslint-disable no-param-reassign */
 /// <reference types="cypress" />
 // ***********************************************************
 // This example plugins/index.js can be used to load plugins
@@ -16,7 +17,13 @@
  * @type {Cypress.PluginConfig}
  */
 // eslint-disable-next-line no-unused-vars
+require("dotenv").config();
+
 module.exports = (on, config) => {
-  // `on` is used to hook into various events Cypress emits
-  // `config` is the resolved Cypress config
-}
+  config.env.EMAIL = process.env.EMAIL;
+  config.env.LOGIN_USERNAME = process.env.LOGIN_USERNAME;
+  config.env.LOGIN_EMAIL = process.env.LOGIN_EMAIL;
+  config.env.LOGIN_PASSWORD = process.env.LOGIN_PASSWORD;
+
+  return config;
+};
