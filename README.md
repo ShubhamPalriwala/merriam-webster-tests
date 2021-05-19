@@ -40,3 +40,6 @@ The website that is tested can be found [here](https://www.merriam-webster.com/)
 
 - Setup linter
 - Init .env.template to be filled locally and renamed to `env` before functional testing with your merriam-webster credentials
+
+#### Update: Did not make it to GSOC '21 but until next time! <br/>
+
